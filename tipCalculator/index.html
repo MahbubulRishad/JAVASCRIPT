@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+
+    <!-- fav icon -->
+    <link rel="icon" href="image/calculator.png">
+    <!-- fav icon -->
+
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <!-- bootstrap CSS -->
+
+    <!-- main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- main CSS -->
+
+
+</head>
+<body class="bg-dark">
+    <section>
+        <div class="container">
+            <div class="row"> 
+                <div class="col-md-6 p-4 mx-auto">
+                    <div class="card card-body text-center mt-5">
+                        <h1>Tip Calculator</h1>
+                        <!-- form start -->
+                        <form id="tip-form">
+                            <!-- input field -->
+                            <div class="input-group m-3 mx-auto">
+                                <span class="input-group-text">৳:</span>
+                                <input type="number" class="form-control" placeholder="Total Bill" id="bill">
+                              </div>
+                            <!-- input field -->
+
+                            <!-- percentage range -->
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <label for="">Tip:</label>
+                                    <!-- range -->
+                                    <input type="range" class="form-control" value="0" id="tipInput">
+                                    <!-- range -->
+                                    <span class="input-group-addon px-2" id="tipOutput"></span>
+                                </div>
+                            </div>
+                            <!-- percentage range -->
+                        </form>
+                        <!-- form end -->
+                        <hr class="mt-4">
+
+                        <!-- result -->
+                            <div id="results">
+                                
+
+                                <h3>Result</h3>
+
+                                <!-- first part start-->
+
+                                    <!-- output field 1-->
+                                    <div class="input-group m-2 mx-auto">
+                                        <span class="input-group-text">Tip amount ৳:</span>
+                                        <input type="number" class="form-control" value="0.00" disabled id="tipAmount">
+                                    </div>
+                                    <!-- output field 1 -->
+                                    
+                                <!-- first part end -->
+
+                                <!-- second part start -->
+
+                                    <!-- output field 2 -->
+                                    <div class="input-group m-2 mx-auto">
+                                        <span class="input-group-text">Total Bill with Tip ৳:</span>
+                                        <input type="number" class="form-control" value="0.00" disabled id="totalBillWithTip">
+                                    </div>
+                                    <!-- output field 2 -->
+                                    
+                                <!-- second part end-->
+                            </div>
+
+                        <!-- result -->
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- javascript -->
+    <script src="tipCalculator.js"></script>
+
+
+    <!-- javascript bootstrap -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- javascript bootstrap -->
+</body>
+</html>
