@@ -1,3 +1,3 @@
 # JAVASCRIPT
 
-Basic javascript & simple project
+Basic javascript & simple project 
